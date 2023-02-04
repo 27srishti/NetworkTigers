@@ -7,5 +7,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('tw-elements/dist/plugin', '@tailwindcss/aspect-ratio'),('flowbite/plugin')],
+  plugins: [require('tw-elements/dist/plugin', '@tailwindcss/aspect-ratio'),('flowbite/plugin'),('@tailwindcss/forms')],
 }

@@ -12,26 +12,26 @@ const Header = () => {
         </ui>
         <ui className="text-gray-600">Gmail: NetworkTiger@gmail.com</ui>
       </div>
-      <div className="container mx-auto px-4 py-3 flex items-center">
+      <div className="container flex justify-center mx-auto px-4 py-3 flex items-center">
         <div className="mr-10 md:w-48 flex-shrink-0">
           <img
-            className="h-8 md:h-10"
+            className="h-8 md:h-10 w-32 "
             src="/static/media/Logo.222d6ec13f67db4063b7.png"
             alt=""
           />
         </div>
         <img
-          className="mr-1"
+          className="mr-1 invisible md:visible"
           src="https://img.icons8.com/ios/30/null/region-code.png"
         />
-        <div className=" md:w-48 hidden sm:flex flex-col place-items-left">
-          <span className="font-bold md:text-md">Deliver to Mike</span>
+        <div className=" md:w-60 hidden invisible md:visible sm:flex  flex-col place-items-left">
+          <span className="font-bold  md:text-md">Deliver to Mike</span>
           <span className=" font-normal cursor-pointer text-sm underline text-blue-700">
             {" "}
             Location
           </span>
         </div>
-        <div className="w-full cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
+        <div className="w-full invisible md:visible cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
           <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4">
             <option>all categories</option>
             <option>router</option>
@@ -40,7 +40,7 @@ const Header = () => {
             <option>Access points</option>
           </select>
           <input
-            className="border-l border-gray-300 bg-transparent font-semibold text-sm pl-4"
+            className="border-l  border-gray-300 bg-transparent font-semibold text-sm pl-6"
             type="text"
             placeholder="I'm searching for ..."
           />
@@ -61,10 +61,10 @@ const Header = () => {
           </svg>
         </div>
         <nav className="contents">
-          <ul className="ml-4 xl:w-48 flex items-center justify-end">
+          <ul className="ml-4  xl:w-48 flex items-center justify-end">
             <a
               href="#_"
-              className="relative rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+              className="relative w-[7rem] text-center rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
             >
               <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease" />
               <span className="relative">Sign-Up</span>

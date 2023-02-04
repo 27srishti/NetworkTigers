@@ -1,11 +1,11 @@
 import React from "react";
-import One from "../Images/1.png"
-import Two from "../Images/Two.png"
-import Three from "../Images/Three.png"
-import Four from "../Images/Four.png"
+import One from "../Images/1.png";
+import Two from "../Images/Two.png";
+import Three from "../Images/Three.png";
+import Four from "../Images/Four.png";
 const Section5 = () => {
   return (
-    <div className=" py-10  mx-auto bg-gray-900 ">
+    <div className=" py-10 mx-auto  bg-gray-900 ">
       <center>
         <div className>
           <h1 className="sm:text-3xl px-10 text-center text-xl font-semibold  title-font text-green-600 ">
@@ -17,7 +17,9 @@ const Section5 = () => {
           </h1>
         </div>
       </center>
-      <div className="flex flex-wrap py-10 md:-m-2 -m-1">
+      
+      <div className="flex = py-10  md:-m-2 -m-1">
+       
         <div className="flex flex-wrap w-1/2 flex justify-end">
           <div className=" hidden w-1/2 ">
             <img
@@ -45,13 +47,15 @@ const Section5 = () => {
                 className="relative w-20 h-7 md:w-28 md:h-10 inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
               >
                 <span className="w-48 h-48 rounded rotate-[-40deg] bg-green-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
-              
-              <a className=" text-center  relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                Explore
-              </a></a>
+
+                <a className=" text-center  relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                  Explore
+                </a>
+              </a>
             </div>
           </div>
         </div>
+        
         <div className="flex relative flex-wrap w-1/2 ">
           <div className="p-1 w-full">
             <img
@@ -65,10 +69,11 @@ const Section5 = () => {
                 className="relative w-20 h-7 md:w-28 md:h-10 inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
               >
                 <span className="w-48 h-48 rounded rotate-[-40deg] bg-green-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
-              
-              <a className=" text-center  relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                Explore
-              </a></a>
+
+                <a className=" text-center  relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                  Explore
+                </a>
+              </a>
             </div>
           </div>
           <div className=" relative px-1 w-1/2">
@@ -87,19 +92,21 @@ const Section5 = () => {
             <div className="flex justify-center">
               <a
                 href="#_"
-                className="relative w-36 my-10 h-12 md:w-40 md:h-14 inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
+                className="relative w-36 my-10 h-12 mx-3 md:w-40 md:h-14 inline-flex items-center justify-start overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group"
               >
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-green-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
-              
-              <a className=" text-center  relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
-                View All Products
-              </a></a>
+                <span className="w-48 h-48  rounded rotate-[-40deg] bg-green-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0" />
+
+                <a className=" text-center   relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">
+                  View All Products
+                </a>
+              </a>
             </div>
           </div>
         </div>
       </div>
       <div />
     </div>
+    
   );
 };
 
