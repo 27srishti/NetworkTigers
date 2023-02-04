@@ -12,7 +12,114 @@ const Header = () => {
         </ui>
         <ui className="text-gray-600">Gmail: NetworkTiger@gmail.com</ui>
       </div>
-      <div className="container flex justify-center mx-auto px-4 py-3 flex items-center">
+      {/* ------------------------------------------------------------------------------------------------------------- */}
+      <nav className="sm:px-4 py-2.5 bg-white  w-full z-20  border-b border-gray-200 dark:border-gray-600">
+        <div className="container flex flex-wrap items-center justify-between mx-auto">
+          <a href="https://flowbite.com/" className="flex items-center">
+            <img
+              src={Logo}
+              className="h-6 mr-3 sm:h-9"
+              alt="Flowbite Logo"
+            />
+            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+              Flowbite
+            </span>
+          </a>
+          <div className="flex md:order-2">
+          <img
+          className="mr-1 w-10 h-10 invisible md:visible"
+          src="https://img.icons8.com/ios/40/null/region-code.png"
+        />
+        <div className=" md:w-60 hidden invisible md:visible sm:flex  flex-col place-items-left">
+          <span className="font-bold  md:text-md">Deliver to Mike</span>
+          <span className=" font-normal cursor-pointer text-sm underline text-blue-700">
+            {" "}
+            Location
+          </span>
+        </div>
+              <a
+              href="#_"
+              className="relative w-[7rem] text-center rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+            >
+              <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease" />
+              <span className="relative">Sign-Up</span>
+            </a>
+            <li className="invisible md:visible ml-2 lg:ml-4 relative inline-block">
+              <a>
+                <svg
+                  className="h-9 lg:h-10 p-2 text-gray-500"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="far"
+                  data-icon="user"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          
+          <div className=" md:w-full hidden cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
+            <select className="bg-transparent  uppercase font-bold text-sm p-4 mr-4">
+              <option>all categories</option>
+              <option>router</option>
+              <option>switches</option>
+              <option>firewalls</option> <option>PDU's</option>{" "}
+              <option>Access points</option>
+            </select>
+            <input
+              className="border-l  border-gray-300 bg-transparent font-semibold text-sm pl-6"
+              type="text"
+              placeholder="I'm searching for ..."
+            />
+            <svg
+              className="ml-auto h-5 px-4  text-gray-500"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="far"
+              data-icon="search"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      {/* <div className="container flex justify-center mx-auto px-4 py-3 flex items-center">
         <div className="mr-10 md:w-48 flex-shrink-0">
           <img
             className="h-8 md:h-10 w-32 "
@@ -20,6 +127,7 @@ const Header = () => {
             alt=""
           />
         </div>
+        
         <img
           className="mr-1 invisible md:visible"
           src="https://img.icons8.com/ios/30/null/region-code.png"
@@ -31,8 +139,8 @@ const Header = () => {
             Location
           </span>
         </div>
-        <div className="w-full invisible md:visible cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
-          <select className="bg-transparent uppercase font-bold text-sm p-4 mr-4">
+        <div className="w-80 md:w-full  cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
+          <select className="bg-transparent  uppercase font-bold text-sm p-4 mr-4">
             <option>all categories</option>
             <option>router</option>
             <option>switches</option>
@@ -90,42 +198,42 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
       <nav className="bg-white shadow text-sm dark:bg-gray-800">
         <div className="container flex items-center justify-center p-4 mx-auto text-gray-600 capitalize dark:text-gray-300">
           <a
             href="#"
-            className="text-gray-800 dark:text-gray-200 border-b-2 border-blue-500 mx-1.5 sm:mx-6"
+            className="text-gray-800  dark:text-gray-200 border-b-2 border-blue-500 mx-3 sm:mx-6"
           >
             Home
           </a>
           <a
             href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
           >
             About Us
           </a>
           <a
             href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
           >
             All Products
           </a>
           <a
             href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
           >
             Blogs
           </a>
           <a
             href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
           >
             FAQ's
           </a>
           <a
             href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-1.5 sm:mx-6"
+            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
           >
             Contact Us
           </a>
