@@ -4,7 +4,7 @@ import React from "react";
 const Section1 = () => {
   return (
     <div class="grid lg:grid-cols-3 md:grid-cols-2  gap-6 w-full max-w-6xl">
-      <div class="flex items-center p-4 bg-white rounded">
+      {/* <div class="flex items-center p-4 bg-white rounded">
         <div class="flex flex-shrink-0 items-center justify-center bg-green-200 h-16 w-16 rounded">
           <svg
             class="w-6 h-6 fill-current text-green-700"
@@ -77,7 +77,7 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-     
+      */}
      
     </div>
   );

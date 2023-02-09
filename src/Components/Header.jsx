@@ -1,8 +1,9 @@
 import React from "react";
 import Logo from "../Images/Logo.png";
+
 const Header = () => {
   return (
-    <header className="bg-white ">
+    <header className="bg-white  ">
       <div className=" text-sm mx-auto h-7 items-center px-6 flex justify-between  bg-gray-300">
         <ui className="text-gray-600">
           <img
@@ -13,7 +14,7 @@ const Header = () => {
         <ui className="text-gray-600">Gmail: NetworkTiger@gmail.com</ui>
       </div>
       {/* ------------------------------------------------------------------------------------------------------------- */}
-      <nav className="sm:px-4 py-2.5 bg-white  w-full z-20  border-b border-gray-200 dark:border-gray-600">
+      <nav className="sm:px-4 hidden py-2.5 bg-white  w-full z-20  border-b border-gray-200 dark:border-gray-600">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <a href="https://flowbite.com/" className="flex items-center">
             <img
@@ -199,46 +200,7 @@ const Header = () => {
           </ul>
         </nav>
       </div> */}
-      <nav className="bg-white shadow text-sm dark:bg-gray-800">
-        <div className="container flex items-center justify-center p-4 mx-auto text-gray-600 capitalize dark:text-gray-300">
-          <a
-            href="#"
-            className="text-gray-800  dark:text-gray-200 border-b-2 border-blue-500 mx-3 sm:mx-6"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            About Us
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            All Products
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            Blogs
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            FAQ's
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            Contact Us
-          </a>
-        </div>
-      </nav>
+      
     </header>
   );
 };
