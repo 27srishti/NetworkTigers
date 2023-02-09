@@ -55,18 +55,18 @@ const Hero = () => {
               />
             </div>
             <div className="  px-10 absolute">
-              <h1 className=" -mt-[7rem] md:-mt-[24rem] max-w-2xl mb-4 text-xl font-bold text-center md:font-extrabold tracking-tight leading-none md:text-3xl xl:text-5xl text-green-600">
+              <h1 className=" -mt-[7rem] md:-mt-[24rem] max-w-2xl mb-4 text-xl font-bold text-center md:text-left md:font-extrabold tracking-tight leading-none md:text-3xl xl:text-5xl text-green-600">
                 Affortdable, Reliable And fast Delivery{" "}
                 <span className="text-gray-100">Of Your Network</span>
               </h1>
-              <p className=" hidden max-w-2xl mb-6 font-light text-gray-400 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              <p className=" invisible md:visible max-w-2xl mb-6 font-light text-gray-400 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 Browser our massive portfolio of the best selling, globally
                 recognized brands as well as the vast variety og network
                 equipment types.
               </p>
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 ml-20 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                className="inline-flex items-center justify-center px-5 py-3 ml-20 md:ml-1 text-base font-medium text-center text-white rounded-lg bg-green-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
               >
                 Explore Now
                 <svg
@@ -84,7 +84,7 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className=" hidden inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                className=" invisible md:visible inline-flex items-center ml-3 justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 Speak to Sales
               </a>
