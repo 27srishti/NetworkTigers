@@ -1,10 +1,20 @@
 import React from "react";
-
+import { motion, useAnimation } from "framer-motion";
 const Section3 = () => {
   return (
     <div className="bg-black">
       <div className="px-4 py-16 w  text-gray-100   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid gap-8  sm:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.1, duration: 2, type: "spring" }}
+                  variants={{
+                    hidden: { opacity: 0, y: 30 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
           <div className="text-center border border-green-500 rounded p-5 ">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
               <svg
@@ -30,6 +40,17 @@ const Section3 = () => {
               industry.
             </p>
           </div>
+          </motion.div>
+          <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.5, duration: 2, type: "spring" }}
+                  variants={{
+                    hidden: { opacity: 0, y: 60 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
           <div className="text-center border border-green-500 rounded p-5  ">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
               <svg
@@ -55,6 +76,18 @@ const Section3 = () => {
               industry.
             </p>
           </div>
+          </motion.div>
+          <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.7, duration: 2, type: "spring" }}
+                  variants={{
+                    hidden: { opacity: 0, y: 70 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
+                  
           <div className="text-center border border-green-500 rounded p-5 ">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
               <svg
@@ -80,6 +113,17 @@ const Section3 = () => {
               industry.
             </p>
           </div>
+          </motion.div>
+          <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 1, duration: 2, type: "spring" }}
+                  variants={{
+                    hidden: { opacity: 0, y: 90 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                >
           <div className="text-center border border-green-500 rounded p-5 ">
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-3 rounded-full bg-indigo-50 sm:w-12 sm:h-12">
               <svg
@@ -105,6 +149,7 @@ const Section3 = () => {
               industry.
             </p>
           </div>
+          </motion.div>
         </div>
       </div>
     </div>
