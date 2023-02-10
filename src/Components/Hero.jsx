@@ -4,46 +4,7 @@ import hero from "../Images/hero.jpg";
 const Hero = () => {
   return (
     <section className="rounded rounded-3xl  ">
-      <nav className="bg-white shadow text-sm dark:bg-gray-800">
-        <div className="container flex items-center justify-center p-4 mx-auto text-gray-600 capitalize dark:text-gray-300">
-          <a
-            href="#"
-            className="text-gray-800  dark:text-gray-200 border-b-2 border-blue-500 mx-3 sm:mx-6"
-          >
-            Home
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            About Us
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            All Products
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            Blogs
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            FAQ's
-          </a>
-          <a
-            href="#"
-            className="border-b-2 border-transparent hover:text-gray-800 dark:hover:text-gray-200 hover:border-blue-500 mx-3 sm:mx-6"
-          >
-            Contact Us
-          </a>
-        </div>
-      </nav>
+      
       <section className="  bg-gray-900">
         <div className="max-w-screen-2xl mx-auto  ">
           <div className=" place-self-center  lg:col-span-7">

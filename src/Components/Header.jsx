@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../Images/Logo.png";
-
+import { motion, useAnimation } from "framer-motion";
 const Header = () => {
   return (
     <header className="bg-white  ">
@@ -14,41 +14,55 @@ const Header = () => {
         <ui className="text-gray-600">Gmail: NetworkTiger@gmail.com</ui>
       </div>
       {/* ------------------------------------------------------------------------------------------------------------- */}
-      <nav className="sm:px-4 hidden py-2.5 bg-white  w-full z-20  border-b border-gray-200 dark:border-gray-600">
+
+      <nav className="sm:px-4 pb-5 py-2.5  mx-auto  w-full z-20 flex justify-between border-b border-gray-600">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
-          <a href="https://flowbite.com/" className="flex items-center">
-            <img
-              src={Logo}
-              className="h-6 mr-3 sm:h-9"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
-          </a>
-          <div className="flex md:order-2">
-          <img
-          className="mr-1 w-10 h-10 invisible md:visible"
-          src="https://img.icons8.com/ios/40/null/region-code.png"
-        />
-        <div className=" md:w-60 hidden invisible md:visible sm:flex  flex-col place-items-left">
-          <span className="font-bold  md:text-md">Deliver to Mike</span>
-          <span className=" font-normal cursor-pointer text-sm underline text-blue-700">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.6, duration: 2, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             {" "}
-            Location
-          </span>
-        </div>
-              <a
+            <a href="https://flowbite.com/" className="flex  items-center">
+              <img src={Logo} className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+            </a>
+          </motion.div>
+
+          <div className="flex md:order-2 ">
+            {/* <img
+              className="mr-1 w-10 h-10 invisible md:visible"
+              src="https://img.icons8.com/ios/40/null/region-code.png"
+            />
+            <div className=" md:w-60 hidden   invisible md:visible sm:flex  flex-col place-items-left">
+              <span className="font-bold  md:text-md">
+                Deliver to{" "}
+                <span className=" font-normal cursor-pointer underline hover:text-gray-900 text-blue-700">
+                  Name
+                </span>
+              </span>
+              <span className=" font-normal cursor-pointer text-sm underline hover:text-gray-900 text-blue-700">
+                {" "}
+                Location
+              </span>
+            </div> */}
+
+            <a
               href="#_"
-              className="relative w-[7rem] text-center rounded px-5 py-2.5 overflow-hidden group bg-green-500 relative hover:bg-gradient-to-r hover:from-green-500 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
+              className="relative rounded px-5 py-2.5 overflow-hidden group bg-green-700 relative hover:bg-gradient-to-r hover:from-green-700 hover:to-green-400 text-white hover:ring-2 hover:ring-offset-2 hover:ring-green-400 transition-all ease-out duration-300"
             >
               <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease" />
               <span className="relative">Sign-Up</span>
             </a>
-            <li className="invisible md:visible ml-2 lg:ml-4 relative inline-block">
+
+            <li className="invisible rounded-sm cursor-pointer md:visible ml-2 lg:ml-4 relative inline-block">
               <a>
                 <svg
-                  className="h-9 lg:h-10 p-2 text-gray-500"
+                  className="h-9 lg:h-10 p-2 text-green-700  hover:text-gray-600"
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="far"
@@ -64,45 +78,26 @@ const Header = () => {
                 </svg>
               </a>
             </li>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
           </div>
-          
-          <div className=" md:w-full hidden cursor-pointer max-w-xs  lg:max-w-md 2xl:max-w-2xl bg-gray-100 rounded-md  xl:flex items-center">
-            <select className="bg-transparent  uppercase font-bold text-sm p-4 mr-4">
-              <option>all categories</option>
-              <option>router</option>
-              <option>switches</option>
-              <option>firewalls</option> <option>PDU's</option>{" "}
-              <option>Access points</option>
-            </select>
+
+          <div className=" md:w-full  h-[100%] hidden cursor-pointer max-w-xs  md:max-w-xl xl:max-w-3xl 2xl:max-w-5xl  border-[0.5px] border-gray-900 border-opacity-50 rounded-md  xl:flex items-center">
+            <div className="  rounded-l-md  text-white ">
+              <select className=" uppercase bg-gray-900 pr-5 rounded-l-md font-bold text-sm p-[0.70rem]  mr-2">
+                <option>all categories</option>
+                <option>Switches</option>
+                <option>Routers</option>
+                <option>Firewalls</option>
+                <option>PDU's</option> <option>Access Points</option>
+              </select>
+            </div>
+
             <input
-              className="border-l  border-gray-300 bg-transparent font-semibold text-sm pl-6"
+              className=" border-0 bg-transparent font-semibold text-sm pl-6"
               type="text"
               placeholder="I'm searching for ..."
             />
             <svg
-              className="ml-auto h-5 px-4  text-gray-500"
+              className="ml-auto h-5 px-5 opacity-50  "
               aria-hidden="true"
               focusable="false"
               data-prefix="far"
@@ -112,6 +107,7 @@ const Header = () => {
               viewBox="0 0 512 512"
             >
               <path
+                className=""
                 fill="currentColor"
                 d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
               />
@@ -119,7 +115,93 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
+      <nav className="bg-gray-900 text-white text-xs sm:text-sm md:text-sm  lg:text-sm font-medium ">
+        <div className="container flex items-center text-center  justify-center py-5 mx-auto  capitalize ">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.5, duration: 3, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: -30 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a href="#" className=" border-b-2 border-blue-500 mx-3 sm:mx-6">
+              Home
+            </a>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.6, duration: 2, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: -80 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a
+              href="#"
+              className="border-b-2 border-transparent hover:text-gray-400  hover:border-blue-500 mx-3 sm:mx-6"
+            >
+              About Us
+            </a>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.7, duration: 2, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: 180 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a
+              href="#"
+              className="border-b-2 border-transparent hover:text-gray-400 hover:border-blue-500 mx-3 sm:mx-6"
+            >
+              All Products
+            </a>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.8, duration: 3, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a
+              href="#"
+              className="border-b-2 border-transparent text-center hover:text-gray-400  hover:border-blue-500 mx-3 sm:mx-6"
+            >
+              {" "}
+              Blogs{" "}
+            </a>
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.9, duration: 3, type: "spring" }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <a
+              href="#"
+              className="border-b-2 border-transparent hover:text-gray-400  hover:border-blue-500 mx-3 sm:mx-6"
+            >
+              Contact Us
+            </a>
+          </motion.div>
+        </div>
+      </nav>
       {/* <div className="container flex justify-center mx-auto px-4 py-3 flex items-center">
         <div className="mr-10 md:w-48 flex-shrink-0">
           <img
@@ -200,7 +282,6 @@ const Header = () => {
           </ul>
         </nav>
       </div> */}
-      
     </header>
   );
 };
